@@ -6,11 +6,11 @@ class Tarea {
     desc = '';
     completadoEn = null;
 
-    constructor(desc) {
-        this.id = uudiv4();
+    constructor(desc,id = null){
+        
+        this.id = id ? id: uudiv4();
         this.desc = desc;
     }
-
 
 }
 
